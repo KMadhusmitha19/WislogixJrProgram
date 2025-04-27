@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Summer School 2025</title>
+    <!-- Bootstrap CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /*.navbar {
+            background-color: #f8f9fa;
+        }*/
+        /* Custom styles */
+        .hero {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero p {
+                font-size: 1.5rem;
+            }
+        }
+
+
+
+        /* Course Cards */
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            }
+        /* Apply Form */
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: #ecf0f1;
+        }
+
+            footer p {
+                margin-bottom: 0;
+                font-size: 0.95rem;
+            }
+
+            footer .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+        @media (min-width: 768px) {
+            footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #34495e;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-control {
+            flex: 1 1 100%;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .checkbox-group, .radio-group {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (min-width: 600px) {
+            .form-control.half {
+                flex: 1 1 48%;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .form-control.third {
+                flex: 1 1 30%;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- intl-tel-input CSS -->
+    <!-- Custom CSS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <div class="container">
+            <div class="container d-flex align-items-center">
+
+                <!--<h1 class="logo me-auto"><a href="index.html"><img src="assets/img/wlogo1.png" height="150" /> </a></h1>-->
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="index.html" class="logo me-auto">
+                    <img src="wlogo1.png" alt="WISLOGIX" class="img-fluid"
+                         height="300px" style="height: auto !important;">
+                </a>
+                <a href="index.html" class="logo me-auto">
+                    <img src="sthree.png" />
+                </a>
+                <a href="index.html" class="logo me-auto">
+                    <img src="semploy.png" alt="WISLOGIX" class="img-fluid"
+                         height="300px" style="height: auto !important;">
+                </a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+        </div>
+    </nav>
+    <section id="apply" class="bg-light py-2">
+        <div class="container">
+            <h1>Student Registration Form (2025–2026)</h1>
+            <form>
+                <!-- Student Info -->
+                <h2>Student Information</h2>
+                <div class="mb-4">
+                    <label for="studentCount" class="block text-gray-700 text-sm font-bold mb-2">Number of Students:</label>
+                    <input type="number" id="studentCount" name="studentCount" min="1" max="10" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+
+                <div id="studentsContainer"></div>
+                <!--<div class="form-group">
+                    <div class="form-control third">
+                        <label for="studentName">First Name</label>
+                        <input type="text" id="studentFirstName" required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="studentName">Last Name</label>
+                        <input type="text" id="studentLastName" required>
+                    </div>
+
+                    <div class="form-control third">
+                        <label for="dob">Date of Birth (Month & Year)</label>
+                        <input type="month" id="dob" name="dob" required>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="form-control third">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required />
+                    </div>
+                    <div class="form-control third">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required />
+                    </div>
+                    <div class="form-control third">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip" required />
+                    </div>
+                </div>-->
+                <!-- Parent Info -->
+                <h2>Parent/Guardian Information</h2>
+                <div class="form-group">
+                    <div class="form-control third">
+                        <label for="parent1FName">Parent First Name</label>
+                        <input type="text" id="parent1FirstName" required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="parent1LName">Parent Last Name</label>
+                        <input type="text" id="parent1LastName" required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="relationship">Relationship to the Child:</label>
+                        <select id="relationship" name="relationship">
+                            <option value="parent">Parent</option>
+                            <option value="guardian">Guardian</option>
+                            <option value="sibling">Sibling</option>
+                            <option value="grandparent">Grandparent</option>
+                            <option value="aunt_uncle">Aunt/Uncle</option>
+                            <option value="cousin">Cousin</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-control third">
+                        <label for="parent1Email">Email Address</label>
+                        <input type="email" id="parent1Email" required>
+                    </div>
+                    <div class="form-control third">
+
+                        <label for="parent1Phone">Phone Number</label>
+
+                        <input type="tel" id="parent1Phone" name="parent1Phone" required />
+
+                    </div>
+
+                    <div class="form-control third">
+                        <label for="communication">  WhatsApp Communication:</label>
+                        <input type="checkbox" id="communication" name="communication" value="yes">
+                    </div>
+
+                </div>
+
+                <!--<div class="form-group">
+                    <div class="form-control half">
+                        <label for="parent2Name">Parent/Guardian 2 Name</label>
+                        <input type="text" id="parent2Name">
+                    </div>
+                    <div class="form-control half">
+                        <label for="parent1Phone">Phone Number</label>
+                        <div style="display: flex; gap: 10px;">
+
+                            <input type="tel" id="paren21Phone" name="parent1Phone" placeholder="123-456-7890" required />
+                        </div>
+                    </div>
+
+                    <div class="form-control half">
+                        <label for="parent2Email">Email Address</label>
+                        <input type="email" id="parent2Email">
+                    </div>
+                    <div class="form-control half">
+                        <label for="parent2Relation">Relationship</label>
+                        <input type="text" id="parent2Relation">
+                    </div>
+                </div>-->
+                <!-- Fees -->
+                <h2>Fees & Program Options</h2>
+                <div class="form-group">
+                    <div class="form-control">
+                        <label>
+                            Registration Fee $110 per child ($10 Per Week for 10 Weeks + $10 Registration Fees).<br> Payable via Zelle to
+                            Payments@wislogix.com
+                        </label>
+
+                    </div>
+                    <div class="form-control">
+                        <label for="enrolledStudents">Total Enrolled Students:</label>
+                        <input type="number" id="enrolledStudents" name="enrolledStudents" disabled="disabled"  required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="transactionId">Zelle Payment Transaction ID:</label>
+                        <input type="text" id="transactionId" name="transactionId" required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="paymentAmount">Payment Amount:</label>
+                        <input type="number" id="paymentAmount" name="paymentAmount" step="0.01" required>
+                    </div>
+                    <div class="form-control third">
+                        <label for="paymentDate">Payment Date:</label>
+                        <input type="date" id="paymentDate" name="paymentDate" pattern="^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-\d{4}$" placeholder="MM-DD-YYYY" required>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <!-- Medical -->
+                <h2>Other</h2>
+                <div class="form-group">
+                    <div class="form-control">
+                        <label for="medical"> Would you like a local stay-at-home mom to care for your child? If yes, please request the brochure here.</label>
+                        <textarea id="medical" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="issues">
+                            How did you hear about this program?
+                        </label>
+                        <textarea id="issues" rows="2"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="issues">
+                            What interests you most about this program?
+                        </label>
+                        <textarea id="issues" rows="2"></textarea>
+                    </div>
+
+
+                </div>
+
+                <!-- Signature -->
+
+                <div class="submit-button">
+                    <button type="submit">Submit Registration</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Apply Section -->
+    <!--<section id="apply" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Apply Now</h2>
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6">
+                    <form class="shadow-sm p-4 bg-white rounded" ction="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Choose a Course</label>
+                            <select class="form-select" id="course" name="course" required>
+                                <option value="math">Math for Beginners</option>
+                                <option value="science">Science Explorations</option>
+                                <option value="arts">Creative Arts</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- Contact Section -->
+    <!--<section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Have any questions? We're here to help!</p>
+            <p>Email: info@summerschool2025.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>-->
+
+
+    <footer class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 Summer School</p>
+            <p class="mb-0">
+                <i class="bi bi-envelope-fill"></i> wislogix.jr@gmail.com &nbsp; | &nbsp;
+                <i class="bi bi-phone-fill"></i> (123) 456-7890
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Optional utils script for formatting/validation -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- intl-tel-input JS -->
+    <!-- intl-tel-input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+
+
+    <script>
+        // Wait until DOM is fully loaded
+
+        document.querySelectorAll('input[type="tel"]').forEach(function (input) {
+            window.intlTelInput(input, {
+                initialCountry: "us",
+                separateDialCode: true,
+                preferredCountries: ["us", "gb", "in", "au"],
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+            });
+        });
+
+    </script>
+    <script>
+        document.getElementById('studentCount').addEventListener('input', function () {
+            const studentsContainer = document.getElementById('studentsContainer');
+            studentsContainer.innerHTML = ''; // Clear previous fields
+            const count = parseInt(this.value) || 0;
+            const enrolledStudents = document.getElementById('enrolledStudents');
+            enrolledStudents.value = count;
+            const paymentAmount = document.getElementById('paymentAmount');
+            paymentAmount.value = count*110;
+
+            
+            for (let i = 1; i <= count; i++) {
+                const studentDiv = document.createElement('div');
+                studentDiv.classList.add('mb-6', 'p-4', 'border', 'rounded', 'bg-gray-50');
+
+                studentDiv.innerHTML = `
+                              <h3 class="text-lg font-semibold mb-2">Student ${i} Information</h3>
+                 <div class="form-group">
+                                <div class="form-control third">
+        <label for="studente${i}Name">First Name</label>
+        <input type="text" id="studente${i}FirstName" name="studente${i}FirstName" required>
+    </div>
+    <div class="form-control third">
+        <label for="studentLast${i}Name">Last Name</label>
+        <input type="text" id="studentLaste${i}Name" name="studentLaste${i}Name" required>
+    </div>
+
+    <div class="form-control third">
+        <label for="dobe${i}">Date of Birth (Month & Year)</label>
+        <input type="month" id="dob${i}" name="dob${i}" required>
+    </div>
+
+</div>
+<div class="form-group">
+    <div class="form-control third">
+        <label for="city${i}">City</label>
+        <input type="text" id="city${i}" name="city${i}" required />
+    </div>
+    <div class="form-control third">
+        <label for="state${i}">State</label>
+        <input type="text" id="state${i}" name="state${i}" required />
+    </div>
+    <div class="form-control third">
+        <label for="zip${i}">Zip Code</label>
+        <input type="text" id="zip${i}" name="zip${i}" required />
+    </div>
+</div> 
+            `;
+                studentsContainer.appendChild(studentDiv);
+            }
+        });
+    </script>
+
+</body>
+</html>
